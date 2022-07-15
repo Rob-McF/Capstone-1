@@ -1,0 +1,295 @@
+.navbar-brand {
+    padding-left: 10px;
+}
+
+/*The logo was sitting too close to the brand name so I added padding */
+.nav-item,
+.navbar-brand {
+    font-family: cursive;
+    font-size: 19px;
+    color: black;
+    padding-right:5px;
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 60px;
+    color: skyblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/*I get warning for using the -webkit-text properties but the borders around the text look nice*/
+
+.centerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    filter: invert(100%)
+}
+
+/*added color filter */
+
+.quotes {
+    font-style: italic;
+    display: block;
+    width: 305px;
+    height: 125px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: ghostwhite;
+    border: dotted 1px;
+
+    border-radius: 2%;
+    border-color: slategrey;
+    color: slategrey;
+    display: inline-block;
+
+    float: left;
+    margin-left: 10px;
+
+
+}
+
+/*I discocered position relative and left/right rather than using margins. It's neater*/
+
+.quotes2 {
+    font-style: italic;
+    display: block;
+    width: 305px;
+    height: 155px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: ghostwhite;
+    border: dotted 1px;
+    border-radius: 2%;
+    color: slategrey;
+
+    float: right;
+    position: relative;
+    right: 25px;
+    margin-left: 10px;
+
+
+}
+
+.quotes3 {
+    font-style: italic;
+    display: block;
+    width: 305px;
+    height: 100px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: ghostwhite;
+    border: dotted 1px;
+
+    border-radius: 2%;
+    color: slategrey;
+    padding: 5px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+.quotes4 {
+    font-style: italic;
+    display: block;
+    width: 305px;
+    height: 100px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: ghostwhite;
+    border: dotted 1px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 2%;
+    color: slategrey;
+    padding: 5px;
+    float: left;
+    margin-left: 10px;
+
+}
+
+
+/*I initially had all the quotes classes together with the same attributes but I gave them individual attributes because the text and background colors were overlapping in a couple of them */
+
+
+/* I was adding margins to the testimonials but I wanted to adhere to floating boxes of the tasks so I made them float left and right*/
+
+
+
+.col-image,
+.col-image2 {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 209px;
+    top: -50px;
+    left: -35px;
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
+}
+
+.col-image:hover,
+.col-image2:hover {
+    transform: scale(1.5);
+
+}
+
+/*When I made just one class for the images it wouldn't scale down the size of the images for some reason, so I had to create two classes for each row*/
+
+.col-sm {
+    border: solid 1px black;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+summary {
+    font-family: cursive;
+    margin-top: 5px;
+}
+
+h2 {
+    font-family: fantasy;
+    text-align: center;
+    font-size: 35px;
+    color: skyblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+th,
+td {
+    font-family: cursive;
+}
+
+th {
+    font-size: 15px;
+}
+
+td {
+    font-size: 13px;
+}
+
+.d-inline-block {
+    margin-left: 4px;
+}
+
+/*I've been told it's bad to have anything touching the very edges/margins so I added a little margin to the logo*/
+
+.aboutdescription {
+    font-style: italic;
+
+    width: 500px;
+    height: 500px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 25%;
+    text-align: center;
+}
+
+.DHL {
+    max-width: 100px;
+    filter: grayscale(100%)
+        /*added second color filter */
+}
+
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    list-style-type: none;
+}
+
+/*putting the UL under the about section created a massive gap so I put negative top margins in CSS to remove it*/
+
+.shipping {
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+    max-width: 300px;
+
+}
+
+/*I was trying to get the .form-group to the upper right hand side but it was proving to be a challenge*/
+
+.description-container {
+    text-align: center;
+    font-family: cursive;
+    color: black;
+}
+
+/*I used a lot of negative margins to get a style I was happy with but the results are broken on mobile view. So I started over again */
+
+
+address {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    padding: 2px;
+    border: solid 1px black;
+    border-radius: 3%
+}
+
+.btn {
+    padding: 15px;
+    background-color: skyblue;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.table {
+    border: dotted 5px grey;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-items: center;
+}
+
+td {
+    border: solid 1px grey;
+}
+
+body {
+    background: rgb(199, 231, 241);
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        background-color:lightblue;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+/*I used RBG colors above previously and they rendered correctly but they caused errors with W3C. */ 
+
+.thumb { display: block;
+    margin-left: auto;
+    margin-right: auto;
+width:19%;
+border:none;
+}
